@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jobsnearby">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JobsNearby">
+        <activity android:name=".map.MapActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".respond.CorrespondenceActivity" />
+        <activity android:name=".respond.AddRespondActivity" />
+        <activity android:name=".respond.RespondListActivity" />
+        <activity android:name=".signin.SignInActivity" />
+        <activity android:name=".profile.MyProfile" />
+        <activity android:name=".job.JobApplication" />
+        <activity android:name=".job.AddVacancyActivity" />
+        <activity android:name=".profile.Profile" />
+        <activity android:name=".job.JobListActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LogUpD.SignUpActivity" />
+        <activity android:name=".LogUpD.ChoiceSignUpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

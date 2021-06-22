@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "686082520602",
+    "project_id": "jobsnearby-48caf",
+    "storage_bucket": "jobsnearby-48caf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686082520602:android:adf2511ae4ba9ce58ec3a3",
+        "android_client_info": {
+          "package_name": "com.example.jobsnearby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686082520602-9o4kt6ugphj6et8v4j0rnhhd5319j8mp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCabaKajow8xTZE6QDHsaYWTb3zn7SMO2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686082520602-9o4kt6ugphj6et8v4j0rnhhd5319j8mp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

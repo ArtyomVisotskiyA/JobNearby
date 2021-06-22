@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:title="@string/acc"
+            android:id="@+id/id_acc"
+            android:icon="@drawable/acc"/>
+        <item android:title="@string/vacancy"
+            android:id="@+id/id_vacancy"
+            android:icon="@drawable/vacancy"/>
+        <item android:title="@string/respond"
+            android:id="@+id/id_respond"
+            android:icon="@drawable/respond"/>
+        <item android:title="@string/map"
+            android:id="@+id/id_map"
+            android:icon="@drawable/map"/>
+        <item android:title="@string/settings"
+            android:id="@+id/id_settings"
+            android:icon="@drawable/settings"/>
+        <item android:title="@string/exit"
+            android:id="@+id/id_exit"
+            android:icon="@drawable/exit"/>
+
+    </group>
+
+
+
+
+</menu>

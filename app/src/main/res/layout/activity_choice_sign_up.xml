@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LogUpD.ChoiceSignUpActivity">
+
+    <Button
+        android:id="@+id/btLogUpEmployee"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="РЕГИСТРАЦИЯ КАК ИСПОЛНИТЕЛЬ"
+        android:textColor="#330949"
+        app:layout_constraintEnd_toEndOf="@+id/btSignUpEmployer"
+        app:layout_constraintStart_toStartOf="@+id/btSignUpEmployer"
+        app:layout_constraintTop_toBottomOf="@+id/btSignUpEmployer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btSignUpEmployer"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="РЕГИСТРАЦИЯ КАК РАБОТОДАТЕЛЬ"
+        android:textColor="#330949"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

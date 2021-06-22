@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/purple_200"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginBottom="7dp"
+                android:text="Дата: "
+                android:textColor="#330949"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:elevation="11dp"
+                app:layout_constraintEnd_toStartOf="@+id/brOpenRespond"
+                app:layout_constraintTop_toTopOf="@+id/brOpenRespond" />
+
+            <TextView
+                android:id="@+id/tvPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оплата:"
+                android:textColor="#330949"
+                app:layout_constraintStart_toStartOf="@+id/tvAdress"
+                app:layout_constraintTop_toBottomOf="@+id/tvAdress" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время:"
+                android:textColor="#330949"
+                app:layout_constraintStart_toStartOf="@+id/tvPayment"
+                app:layout_constraintTop_toBottomOf="@+id/tvPayment" />
+
+            <TextView
+                android:id="@+id/tvAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Адрес:"
+                android:textColor="#330949"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Наименование работы"
+                android:textAlignment="center"
+                android:textColor="#330949"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imJobList2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imJobList2"
+                android:layout_width="82dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <Button
+                android:id="@+id/brOpenRespond"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:background="@android:drawable/ic_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
